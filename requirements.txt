@@ -11,6 +11,7 @@ googleapis-common-protos==1.58.0
 googletrans==3.0.0
 grpcio==1.51.3
 grpcio-status==1.51.3
+gunicorn==19.7.1
 h11==0.9.0
 h2==3.2.0
 hpack==3.0.0
