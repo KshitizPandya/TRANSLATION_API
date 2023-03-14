@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "polyglot-379405",
+  "private_key_id": "1cb386f1dbbd0499f1c0352ae3a843d1280fa283",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsEmVVnjshFgF5\nOyd0k8Iwpwy1g8lP+tjnukj9Ftiebj3NZGJQaxvbqmZVpSjtqNdS0c8Lykec6HU+\nJwdhO7G0JIR5uDXDTdIxViPlEIrBCX4/MsXHk4N9wN8fZIzrVab9+hDswYdiPbGy\nXSXAnEnXLNpkaHVBSO7PAjytirRQRbWXB+k2mRMDeG1iC+fa6B31gufkW0rxR7oC\nq1mDFPGz3ft5UQd8R3dsKnSnaQbGDjVp/bJO93b0EJ/qqN9l0OxPQtv+k2aliedq\nxtyDsvKR7Wfj8So4EH6RXBBWALX91RpUxYfX9OmLFQAdPTPewY/WkCcZ2beFxYmX\njHYuNRLJAgMBAAECggEABfTuEqBzahINs4FvfHroAFCsITWCeNUVgLIjeDV8AsIM\nvClDOQb4NCrKN6FL0Sxk5d5TBVS3lXA7rM7jk8NiA7s25dLRc6UkR2Z0wCeKMiQO\nvYfXrnDGHsqYPsk3kqcIrKalQtjxQ56goezVE32llcAdAFhYZM3uTHbGnHhehR/S\nEqlFL7FppQVvYuG6m+Y4ciAUrMMSSGm5RKVpMf9fpKqbXhHB6b8hzuq+W85u1KAu\ngu+sCNrmLCoUEuJr6S/L9LQMtl0qyTfIj2edRjdQmaJ42483jFIYQYGDbZWZBW1I\nR6KU5UXd8mYR4O/f+7DiI/Fz6GVnBM00cO5dQkG8jQKBgQDlP7DIQy8m82JFa8t1\nGjH6RzzNdWMEh/a2BijnlbQyJh+pMdl1FewHKgOUsRBb35v0wX8WW7ut7EdY+VrZ\n97V3XcvO2hy60yDEqUBpVzkxePaYoSL2E5riruqYcekiBU1y5DyKIFgwcAf/XUgm\nxYiSHdZGrbmFF6600COmLYbfvQKBgQDAJqsuftdrxitEY7Drh+OLtMJNre79NbiG\nBJ0XsiFm//3J5SvqlPQ22Mi1h56yK+yxps88Hq72BGaolFPFU4K3GBx7BxU/UD6t\ncK+H3s4e++Z6LY4vOtA1cen1PgyCDhqhNvJ9m1EY3+wNIgpxYBmAEYTGdWZdAM8f\nsAu6dxqZ/QKBgFmujtPpJHsSX3FU+CT5eG+2ipy9vVy6a9NNmZbvQ60SqPQhojZh\nuxIaZ4g1tHachYA8aiEvBb7GXir6cYYvl3f445AqV27mxTzqEV6kVqV58s5Gy0yE\n4uSnFPNKLK+4b1Hw45YNjTJ1wUsvDNjOEd1HetnvgFIGr7vgaPHLgaXpAoGAXIGB\nQfYgwar644bXAt095+FS9dC50L9PIX4RHvpL6GlvhgZFeT7Sv6DoJ7St6vsIjZJQ\nDJJ9CsWdoqUeG06UDI+YDoafbQa11gv9BX13YCVHlSRfYk9/M2uvBbkkjmw518k7\nPstKZJ5Q5xWvT1vDiwtkD6Mvb7DXBltbmh6C+QUCgYEAoP4FDnZtesXedDZaZkKk\nB2VUVilOhQ7Eg4VWExUVhNraRw/OBypaJFg0MXar8QkRckIXqcR+rVgMWhyN7PZ/\nTNicMkYmbuMEvaNq/Cd1JKKXpFpPVj+DS0k14IJ699ZMyWzVk6avc9w2sAejwahL\ncWleisQRxZlAJcRe8aI33KE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "kshitiz-pandya@polyglot-379405.iam.gserviceaccount.com",
+  "client_id": "105911378124574431935",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kshitiz-pandya%40polyglot-379405.iam.gserviceaccount.com"
+}
