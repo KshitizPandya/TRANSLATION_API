@@ -64,7 +64,7 @@ idna==2.10
 imbalanced-learn==0.10.1
 imblearn==0.0
 ipykernel==6.16.2
-ipython==8.8.0
+ipython==7.34.0
 ipython-genutils==0.2.0
 isoduration==20.11.0
 itsdangerous==2.1.2
