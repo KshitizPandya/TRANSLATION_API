@@ -84,6 +84,8 @@ def extract_text_from_image(image_data):
 
 
 def translate_text(text, target_language):
+    print("This is the text feeded for translation: ", text, type(text))
+    print("This is the target_language feeded for translation: ", target_language, type(target_language))
     translator = Translator()
     try:
         translation = translator.translate(text, dest=target_language)
