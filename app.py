@@ -20,12 +20,42 @@ class ResponseModel(BaseModel):
     text: str
     translation: str
 
+# def extract_text_from_image(image_data):
+#     try:
+#         decoded_image = base64.b64decode(image_data)
+#         image = cv2.imdecode(np.frombuffer(decoded_image, np.uint8), cv2.IMREAD_COLOR)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
+
+#     _, encoded_image = cv2.imencode('.png', image)
+#     content = encoded_image.tobytes()
+#     vision_image = vision.Image(content=content)
+
+#     client = vision.ImageAnnotatorClient()
+#     try:
+#         response = client.document_text_detection(image=vision_image)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
+
+#     texts = []
+#     for page in response.full_text_annotation.pages:
+#         for i, block in enumerate(page.blocks):
+#             for paragraph in block.paragraphs:
+#                 for word in paragraph.words:
+#                     word_text = ''.join([symbol.text for symbol in word.symbols])
+#                     texts.append(word_text)
+
+#     output = ' '.join(texts)
+#     return output
+
 def extract_text_from_image(image_data):
     try:
         decoded_image = base64.b64decode(image_data)
         image = cv2.imdecode(np.frombuffer(decoded_image, np.uint8), cv2.IMREAD_COLOR)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error decoding image: {e}")
         return None
 
     _, encoded_image = cv2.imencode('.png', image)
@@ -35,8 +65,9 @@ def extract_text_from_image(image_data):
     client = vision.ImageAnnotatorClient()
     try:
         response = client.document_text_detection(image=vision_image)
+        print(response)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error detecting text: {e}")
         return None
 
     texts = []
