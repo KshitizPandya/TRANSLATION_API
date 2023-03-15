@@ -122,6 +122,8 @@ def extract_and_translate(request: RequestModel) -> ResponseModel:
 
 
     language_code = get_language_code(target_language)
+    print(language_code)
+    
     if not language_code:
         return {"text": "", "translation": "Error: Language not supported."}
 
