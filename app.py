@@ -12,13 +12,16 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "polyglot-379405-1cb386f1dbbd.jso
 
 app = FastAPI()
 
+
 class RequestModel(BaseModel):
     base64_image: str
     language: str
 
+
 class ResponseModel(BaseModel):
     text: str
     translation: str
+
 
 # def extract_text_from_image(image_data):
 #     try:
@@ -89,16 +92,22 @@ def translate_text(text, target_language):
     translator = Translator()
     try:
         translation = translator.translate(text, dest=target_language)
+
     except Exception as e:
         print(f"Error: {e}")
         return None
 
+    print("HIHIHIHIHIHIHI_1: ", translation.text)
     return translation.text
 
 
 def get_language_code(language):
-    indic_language_codes = {"english": "en", "hindi": "hi", "gujarati": "gu", "arabic": "ar", "assamese": "as", "bengali": "bn", "kannada": "kn", "malayalam": "ml", "marathi": "mr", "nepali": "ne", "punjabi": "pa", "tamil": "ta", "telugu": "te", "thai": "th", "urdu": "ur", "vietnamese": "vi"}
-    foreign_language_codes = {"french": "fr", "german": "de", "italian": "it", "japanese": "ja", "korean": "ko", "portuguese": "pt", "russian": "ru", "spanish": "es", "turkish": "tr"}
+    indic_language_codes = {"english": "en", "hindi": "hi", "gujarati": "gu", "arabic": "ar", "assamese": "as",
+                            "bengali": "bn", "kannada": "kn", "malayalam": "ml", "marathi": "mr", "nepali": "ne",
+                            "punjabi": "pa", "tamil": "ta", "telugu": "te", "thai": "th", "urdu": "ur",
+                            "vietnamese": "vi"}
+    foreign_language_codes = {"french": "fr", "german": "de", "italian": "it", "japanese": "ja", "korean": "ko",
+                              "portuguese": "pt", "russian": "ru", "spanish": "es", "turkish": "tr"}
 
     try:
         return indic_language_codes[language]
@@ -110,9 +119,6 @@ def get_language_code(language):
             return None
 
 
-
-
-
 @app.post("/translate")
 def extract_and_translate(request: RequestModel) -> ResponseModel:
     image_data = request.base64_image
@@ -122,16 +128,16 @@ def extract_and_translate(request: RequestModel) -> ResponseModel:
     if not ocr_text:
         return {"text": "", "translation": "Error: Text extraction failed."}
 
-
     language_code = get_language_code(target_language)
-    print(language_code)
-    
+    # print(language_code)
+
     if not language_code:
         return {"text": "", "translation": "Error: Language not supported."}
 
     translation = translate_text(ocr_text, language_code)
-    print("This is the output of translation: "+translation)
-    
+    print("HIHIHIHIHIHIHI_2: ", translation)
+
+
     if not translation:
         return {"text": "", "translation": "Error: Translation failed."}
 
