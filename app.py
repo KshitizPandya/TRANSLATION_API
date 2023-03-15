@@ -128,6 +128,8 @@ def extract_and_translate(request: RequestModel) -> ResponseModel:
         return {"text": "", "translation": "Error: Language not supported."}
 
     translation = translate_text(ocr_text, language_code)
+    print("This is the output of translation: "+translation)
+    
     if not translation:
         return {"text": "", "translation": "Error: Translation failed."}
 
