@@ -87,8 +87,8 @@ def extract_text_from_image(image_data):
 
 
 def translate_text(text, target_language):
-    print("This is the text feeded for translation: ", text, type(text))
-    print("This is the target_language feeded for translation: ", target_language, type(target_language))
+#     print("This is the text feeded for translation: ", text, type(text))
+#     print("This is the target_language feeded for translation: ", target_language, type(target_language))
     translator = Translator()
     try:
         translation = translator.translate(text, dest=target_language)
@@ -97,7 +97,7 @@ def translate_text(text, target_language):
         print(f"Error: {e}")
         return None
 
-    print("HIHIHIHIHIHIHI_1: ", translation.text)
+#     print("HIHIHIHIHIHIHI_1: ", translation.text)
     return translation.text
 
 
@@ -135,7 +135,7 @@ def extract_and_translate(request: RequestModel) -> ResponseModel:
         return {"text": "", "translation": "Error: Language not supported."}
 
     translation = translate_text(ocr_text, language_code)
-    print("HIHIHIHIHIHIHI_2: ", translation)
+#     print("HIHIHIHIHIHIHI_2: ", translation)
 
 
     if not translation:
