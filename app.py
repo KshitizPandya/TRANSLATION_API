@@ -49,6 +49,7 @@ class ResponseModel(BaseModel):
 
 #     output = ' '.join(texts)
 #     return output
+# print(".")
 
 def extract_text_from_image(image_data):
     try:
