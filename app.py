@@ -8,7 +8,7 @@ from googletrans import Translator
 import base64
 import numpy as np
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "D:/vision API key/polyglot-379405-1cb386f1dbbd.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "polyglot-379405-1cb386f1dbbd.json"
 
 app = FastAPI()
 
