@@ -8,7 +8,7 @@ from googletrans import Translator
 import base64
 import numpy as np
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "polyglot-379405-1cb386f1dbbd.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "D:/vision API key/polyglot-379405-1cb386f1dbbd.json"
 
 app = FastAPI()
 
@@ -139,7 +139,7 @@ def get_language_code(language):
 @app.post("/translate")
 def extract_and_translate(request: RequestModel) -> ResponseModel:
     image_data = request.base64_image
-    target_language = request.language.lower()
+    target_language = request.language
 
     ocr_text = extract_text_from_image(image_data)
     if not ocr_text:
