@@ -117,8 +117,7 @@ def get_language_code(language):
 
 
 @app.post("/translate")
-def extract_and_translate(request: RequestModel) -> dict[str, str] | dict[str, str] | dict[str, str] | dict[
-    str, str | None | Any]:
+def extract_and_translate(request: RequestModel) -> dict[str, str] | dict[str, str] | dict[str, str] | dict[str, str]:
     image_data = request.base64_image
     target_language = request.language
 
